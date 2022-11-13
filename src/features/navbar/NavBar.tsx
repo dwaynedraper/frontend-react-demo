@@ -31,11 +31,18 @@ export default function NavBar() {
             </li>
             <li className='nav-item'>
               <a className='nav-link' href='#'>
-                Link
+                Components
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link disabled'>Disabled</a>
+              <a className='nav-link' href='#'>
+                Cheat Sheets
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' href='#'>
+                Canvas API
+              </a>
             </li>
             <li className='nav-item dropdown'>
               <a
@@ -44,22 +51,22 @@ export default function NavBar() {
                 data-bs-toggle='dropdown'
                 aria-expanded='false'
               >
-                Dropdown
+                Scroll Effects
               </a>
               <ul className='dropdown-menu'>
                 <li>
                   <a className='dropdown-item' href='#'>
-                    Action
+                    Static Parallax
                   </a>
                 </li>
                 <li>
                   <a className='dropdown-item' href='#'>
-                    Another action
+                    Dual Parallax
                   </a>
                 </li>
                 <li>
                   <a className='dropdown-item' href='#'>
-                    Something else here
+                    Animated Scrolling
                   </a>
                 </li>
               </ul>
