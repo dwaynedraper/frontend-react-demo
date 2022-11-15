@@ -1,0 +1,4 @@
+.content {
+  width: calc(100vw - 285px);
+  height: 100vh;
+}

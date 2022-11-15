@@ -1,10 +1,10 @@
 import React from "react";
 import "./SignUp.css";
 import "../login.css";
-import { useFormState } from "../hooks/useFormState";
-import TextInput from "../components/TextInput";
-import { createUser, selectUser } from "../features/auth/authSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useFormState } from "../../hooks/useFormState";
+import TextInput from "../../components/TextInput";
+import { createUser, selectUser } from "./authSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 
 export default function SignUp() {
   const [state, handleChange] = useFormState({

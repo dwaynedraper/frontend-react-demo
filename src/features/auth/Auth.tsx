@@ -1,7 +1,7 @@
 import React from 'react';
 import { useToggle } from '../../hooks/useToggle';
-import SignUp from '../../pages/SignUp';
-import Login from '../../features/login/Login';
+import SignUp from './SignUp';
+import Login from './Login';
 import { useAppSelector } from '../../app/hooks';
 import { selectIsUserCreated } from './authSlice';
 

@@ -9,7 +9,7 @@ export const store = configureStore({
     auth: authReducer,
   },
   devTools: true,
-  middleware: [logger],
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export type AppDispatch = typeof store.dispatch;

@@ -1,29 +1,31 @@
 import React from 'react';
 import './App.css';
 import Content from './pages/Content';
-import NavBar from './features/navbar/NavBar';
+import NavBar from './components/NavBar';
 import Auth from './features/auth/Auth';
 import { useAppDispatch, useAppSelector } from './app/hooks';
 import { selectIsAuthenticated } from './features/auth/authSlice';
-import Sidebar from './features/sidebar/Sidebar';
+import Sidebar from './components/Sidebar';
+import Table from './components/Table';
 
 function App() {
   const isUserAuthenticated = useAppSelector(selectIsAuthenticated);
   const dispatch = useAppDispatch();
   return (
-    <>
+    <div>
       <NavBar />
-      <div className="App">
+      {/* <div className="App">
         {!isUserAuthenticated && (
           <Auth />
         )}
-      </div>
-      {isUserAuthenticated && (
-        <Content>
-          <Sidebar />
-        </Content>
-      )}
-    </>
+      </div> */}
+      <Content>
+        <Sidebar />
+        {/* <Table />
+        <Table /> */}
+        <p> Just saying</p>
+      </Content>
+    </div>
   );
 }
 

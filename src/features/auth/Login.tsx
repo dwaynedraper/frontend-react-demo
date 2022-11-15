@@ -2,7 +2,7 @@ import React from "react";
 import TextInput from "../../components/TextInput";
 import { useFormState } from "../../hooks/useFormState";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import { login, selectUser } from "../auth/authSlice";
+import { login, selectUser } from "./authSlice";
 
 export default function Login() {
   const [state, handleChange] = useFormState({

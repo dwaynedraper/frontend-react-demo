@@ -3,8 +3,9 @@ import React from "react";
 export default function NavBar() {
   return (
     <nav
-      className='navbar navbar-expand-lg navbar-white bg-white'
+      className='navbar navbar-expand-lg navbar-white'
       aria-label='Ninth navbar example'
+      style={{ backgroundColor: "#e3f2fd" }}
     >
       <div className='container-xl'>
         <a className='navbar-brand' href='#'>
